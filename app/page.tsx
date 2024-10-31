@@ -29,13 +29,13 @@ export default function Home() {
     const FOOOCUS_URL = process.env.NEXT_PUBLIC_FOOOCUS_URL;
 
     if (!CORRECT_CODE || !FOOOCUS_URL) {
-      setMessage('Configuration error. Please check .env.local file.');
+      setMessage('Configuration error');
       setIsError(true);
       return;
     }
 
     if (accessCode === CORRECT_CODE) {
-      setMessage('Connecting to Fooocus...');
+      setMessage('Connecting...');
       setIsError(false);
       window.location.href = FOOOCUS_URL;
     } else {
@@ -92,12 +92,6 @@ export default function Home() {
               {message}
             </p>
           )}
-        </div>
-
-        <div className="text-center  text-sm text-gray-500">
-          {process.env.NEXT_PUBLIC_FOOOCUS_URL && 
-            <p>Connecting to: {process.env.NEXT_PUBLIC_FOOOCUS_URL}</p>
-          }
         </div>
       </div>
     </main>
