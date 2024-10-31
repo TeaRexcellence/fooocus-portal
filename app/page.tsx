@@ -94,7 +94,7 @@ export default function Home() {
           )}
         </div>
 
-        <div className="text-center text-sm text-gray-500">
+        <div className="text-center  text-sm text-gray-500">
           {process.env.NEXT_PUBLIC_FOOOCUS_URL && 
             <p>Connecting to: {process.env.NEXT_PUBLIC_FOOOCUS_URL}</p>
           }
