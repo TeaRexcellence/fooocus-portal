@@ -5,7 +5,7 @@ const nextConfig = {
       unoptimized: true,
   },
   // No basePath needed if repo name is fooocus-portal
-  basePath: "/nextjs-page", assetPrefix:"/nextjs-page",
+  basePath: "/fooocus-portal", assetPrefix:"/fooocus-portal",
 }
 
 module.exports = nextConfig
